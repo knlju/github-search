@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title></title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <main class="main-container">
+      <div class="top-container">
+        <h2 class="logo">
+          devfinder
+        </h2>
+        <div class="theme-picker action">
+          <span class="dark-only">
+            Light
+            <img src="assets/icon-sun.svg" alt="sun" class="tp-img" />
+          </span>
+          <span class="light-only">
+            Dark
+            <img src="assets/icon-moon.svg" alt="moon" class="tp-img" />
+          </span>
+        </div>
+      </div>
+
+      <div class="search-bar action box-shadow">
+        <input type="text" size="1" placeholder="Search GitHub username..." class="input-username action" />
+        <span class="error-message">Error message</span>
+        <input type="submit" value="Search" class="btn-submit action" />
+      </div>
+
+      <div class="content-wrapper box-shadow">
+        <div class="lg-container">
+          <img src="assets/octocat.png" alt="profile picture" class="profile-picture lg">
+        </div>
+
+        <div class="content-container">
+          <div class="header-info">
+            <img src="assets/octocat.png" alt="profile picture" class="profile-picture md">
+            <div class="title-wrapper">
+              <h1 class="users-name">The Octocat</h1>
+              <div class="date-joined">Joined 25 Jan 2011</div>
+              <h3 class="username">@octocat</h3>
+            </div>
+          </div>
+          <div class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
+            mattis eros.</div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-name">Repos</div>
+              <div class="stat-number repos">#</div>
+            </div>
+            <div class="stat">
+              <div class="stat-name">Followers</div>
+              <div class="stat-number followers">#</div>
+            </div>
+            <div class="stat">
+              <div class="stat-name">Following</div>
+              <div class="stat-number following">#</div>
+            </div>
+          </div>
+
+          <div class="links-container">
+            <div class="right-side links">
+              <div class="location">
+                <img src="assets/icon-location.svg" alt="location">
+                <span class="location-text">
+                  something
+                </span>
+              </div>
+              <div class="website-link">
+                <img src="assets/icon-website.svg" alt="website">
+                <a href="" id="website-link" class="link" target="blank">
+                  <span class="website-text">
+                    something
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="left-side links">
+              <div class="twitter-link">
+                <img src="assets/icon-twitter.svg" alt="twitter">
+                <a href="" id="twitter-link" class="link" target="blank">
+                  <span class="twitter-text">
+                    something
+                  </span>
+                </a>
+              </div>
+              <div class="company">
+                <img src="assets/icon-company.svg" alt="company">
+                <span class="company-text">
+                  something
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+  </div>
+
+</body>
+
+</html>

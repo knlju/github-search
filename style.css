@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.theme-light {
+    --action-color: 0, 121, 255;
+    --primary-color: #2B3442;
+    --secondary-color: #4B6A9B;
+    --soft-color: #697C9A;
+    --primary-bg-color: #FEFEFE;
+    --secondary-bg-color: #F6F8FF;
+    --inputColor: #222731;
+}
+
+.theme-dark {
+    --action-color: 0, 121, 255;
+    --primary-color: white;
+    --secondary-color: white;
+    --soft-color: white;
+    --primary-bg-color: #1E2A47;
+    --secondary-bg-color: #141d2f;
+    --inputColor: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono';
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(var(--action-color));
+    margin: 0;
+}
+
+h4 {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--secondary-color);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--secondary-bg-color);
+}
+
+.main-container {
+    margin: 31px 24px;
+    width: 730px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light-only, .dark-only {
+    display: flex;
+    gap: 16px;
+}
+
+.light-only:hover, .dark-only:hover {
+    filter: brightness(.5);
+}
+
+.tp-img {
+    height: 20px;
+    width: 20px;
+}
+
+.theme-picker {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--soft-color);
+    font-size: 13px;
+    letter-spacing: 2.5px;
+}
+
+.box-shadow {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.search-bar {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    background-color: white;
+    background-image: url(assets/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center left 4%;
+    padding-left: 80px;
+    margin: 36px 0 24px 0;
+    border-radius: 13px;
+    background-color: var(--primary-bg-color);
+}
+
+.input-username {
+    flex-grow: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-family: 'Space Mono';
+    color: var(--inputColor);
+    box-sizing: border-box;
+    background-color: var(--primary-bg-color);
+}
+
+.input-username::placeholder {
+    color: var(--secondary-color);
+}
+
+.error-message {
+    display: none;
+    font-weight: bold;
+    color: #F74646;
+}
+
+.show {
+    display: block;
+}
+
+.btn-submit {
+    padding: 13px 24px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(var(--action-color));
+    color: white;
+    font-family: 'Space Mono';
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btn-submit:hover {
+    background-color: rgba(var(--action-color), 0.6);
+}
+
+.content-wrapper {
+    background-color: var(--primary-bg-color);
+    border-radius: 12px;
+    display: flex;
+    padding: 48px;
+    gap: 37px;
+}
+
+.profile-picture {
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+}
+
+.md {
+    display: none;
+}
+
+.users-name {
+    flex-grow: 1;
+}
+
+.date-joined {
+    color: var(--soft-color);
+}
+
+.username {
+    flex-basis: 100%;
+}
+
+.bio {
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.logo {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.stats {
+    background-color: var(--secondary-bg-color);
+    border-radius: 15px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 15px 32px;
+    margin: 32px 0 37px 0;
+    gap: 85px;
+}
+
+.stat-name {
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+
+.stat-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.header-info {
+    display: flex;
+}
+
+.links-container {
+    display: flex;
+    color: var(--secondary-color);
+}
+
+.links {
+    flex: 1;
+}
+
+.links>* {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.location, .twitter-link {
+    margin-bottom: 19px;
+}
+
+.link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+a[href=""] {
+    opacity: 0.7;
+}
+
+a[href=""]:hover {
+    text-decoration: none;
+    cursor: auto;
+}
+
+.action {
+    cursor: pointer;
+}
+
+.theme-dark .light-only {
+    display: none;
+}
+
+.theme-light .dark-only {
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+    .lg {
+        display: none;
+    }
+    .md {
+        display: block;
+    }
+    .main-container {
+        width: auto;
+        max-width: 573px;
+    }
+    .content-wrapper {
+        padding: 40px;
+        gap: 0;
+    }
+    .profile-picture {
+        margin-right: 41px;
+    }
+    .date-joined {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 550px), screen and (max-width: 720px) and (orientation:landscape) {
+    h1 {
+        font-size: 16px;
+        line-height: normal;
+    }
+    h3 {
+        font-size: 13px;
+    }
+    .date-joined {
+        font-size: 13px;
+    }
+    .bio {
+        font-size: 13px;
+    }
+    .stats {
+        gap: 0;
+        justify-content: space-evenly;
+        padding: 18px 15px;
+    }
+    .stat-name {
+        font-size: 11px;
+    }
+    .stat-number {
+        font-size: 16px;
+    }
+    .links {
+        font-size: 13px;
+    }
+    .links-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .location, .twitter-link {
+        margin-bottom: 16px;
+    }
+    .content-wrapper {
+        padding: 32px 24px;
+    }
+    .input-username {
+        font-size: 13px;
+        min-width: auto;
+    }
+    .btn-submit {
+        font-size: 13px;
+    }
+    .search-bar {
+        padding-left: 50px;
+        gap: 0;
+    }
+    .profile-picture {
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+    }
+    .stat {
+        text-align: center;
+    }
+}
